@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, serif;
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 10%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 0 0% 10%;
+  
+  /* Use subtle gray for result section */
+  --card: 0 0% 97.3%; 
+  --card-foreground: 0 0% 10%;
+  
+  --primary: 0 0% 10%;
+  --primary-foreground: 0 0% 100%;
+  
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 40%;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
