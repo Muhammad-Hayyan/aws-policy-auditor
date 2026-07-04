@@ -6,7 +6,7 @@ export interface IAMActionInfo {
 
 export type IAMDatasetMap = Record<string, IAMActionInfo>;
 
-// Bump this string whenever iam_definition.json is updated to invalidate the cache....
+// Bump this string whenever iam_definition.json is updated to invalidate the cache.....
 const CACHE_KEY = 'iam_map_v1';
 const DB_NAME = 'iam-auditor';
 const STORE_NAME = 'dataset';
